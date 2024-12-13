@@ -1,0 +1,21 @@
+---
+title: "UN_Data_Exploration_R"
+output: html_notebook
+---
+1.	Using the `read_csv()` function, read the GDP dataset into your notebook as a tibble called `gdp_df`. After reading it in, inspect the first 10 rows and then inspect the last 10 rows. 
+
+```{r}
+library(tidyverse)
+gdp_df <- read_csv('data/gdp_per_capita.csv')
+```
+```{r}
+head(gdp_df, n=10 )
+tail(gdp_df, n=10 )
+```
+2. Drop the 'Value Footnotes' column, and rename the remaining columns to 'Country', 'Year', and 'GDP_Per_Capita'.
+```{r}
+select(gdp_df, )
+```
+
+
+
